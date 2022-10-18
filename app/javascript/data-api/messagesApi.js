@@ -3,7 +3,6 @@ import { createAsyncThunk } from '@reduxjs/toolkit'
 const randomMessage = createAsyncThunk(
   '/api/messages',
   async () => {
-    console.log('HIII')
     const response = await fetch('/api/messages', {
       method: 'GET',
       headers: {
@@ -11,7 +10,6 @@ const randomMessage = createAsyncThunk(
       },
     });
     let variable = await response.json()
-    console.log(variable)
     return variable.greetings;
   },
 );

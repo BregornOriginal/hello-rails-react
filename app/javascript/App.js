@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes as Router, Route, BrowserRouter } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import ShowMessages from './components/Gretting';
-import randomMessage from './data-api/messagesApi';
 
 function App() {
 
